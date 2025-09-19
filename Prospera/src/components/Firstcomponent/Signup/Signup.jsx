@@ -1,12 +1,13 @@
 import React from 'react';
-import './LoginSignup.css';
+import './Signup.css';
+
 
 import email_icon from '../Assets/email.png';
 import pass_icon from '../Assets/password.png';
 import phone_icon from '../Assets/phonenumber.jpg';
 import user_icon from '../Assets/username.jpg';
 
-const LoginSignup = () => {
+const Signup = () => {
   return (
     <div className='container'>
       <div className='header'>
@@ -35,8 +36,12 @@ const LoginSignup = () => {
           <input type="password" placeholder="Password" />
         </div>
       </div>
+
+      <div className="submit-container">
+        <div className="submit">Sign Up</div>
+      </div>
     </div>
   );
 }
 
-export default LoginSignup;
+export default Signup;

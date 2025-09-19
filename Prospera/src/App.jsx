@@ -1,10 +1,15 @@
-
 import './App.css';
-import LoginSignup from './components/Firstcomponent/LoginSignup'
+import Signup from './components/Firstcomponent/Signup/Signup';
+import Login from './components/Firstcomponent/Login/Login';
+
 function App() {
   return (
     <div>
-       <LoginSignup/>
+      {/* Show Signup */}
+      <Signup />
+
+      {/* Or show Login */}
+      {/* <Login /> */}
     </div>
   );
 }
