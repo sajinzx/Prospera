@@ -23,11 +23,7 @@ function App() {
           <Route path="/" element={<SignUp/>}/>
           <Route path="/Login" exact element={<Login/>}/>
           <Route path="/Signup" exact element={<SignUp/>}/>
-<<<<<<< HEAD
           <Route path="/home" exact element={<Home/>}/>
-=======
-          <Route path="/dashboard" exact element={<Dashboard/>}/>
->>>>>>> dfb1c28f4bac726389e7756aa17d6fac57bab7d3
           <Route path="/income" exact element={<Income/>}/>
           <Route path="/expense" exact element={<Expense/>}/>
           <Route path="/formpage" exact element={<FormPage/>}/>
