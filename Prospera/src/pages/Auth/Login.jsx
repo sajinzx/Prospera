@@ -11,23 +11,7 @@ import pass_icon from '../../components/assets/password.jpg';
 
 
 const Login = () => {
-    const handleLogin=async(e)=>
-    {
-        e.preventDefault();
-        if(!validateEmail(email))
-        {
-            setError("Please Enter a valid email address.")
-            return;
-        }
-        if(!password)
-        {
-            setError("Please enter the right password.")
-            return;
-        }
-        setError("");
-        //Login API Call
-    }
-
+ 
 
   return (
     <div className='container'>

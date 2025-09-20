@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import './Signup.css';
 
 import email_icon from '../../components/assets/emailimage.jpg';
@@ -8,6 +10,36 @@ import user_icon from '../../components/assets/person.jpg';
 
 
 const Signup = () => {
+  const navigate=useNavigate();
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    phone: '',
+    password: ''
+  });
+  const handleChange = (e) => {
+    setFormData({...formData, [e.target.name]: e.target.value});
+  }
+  const handleSubmit = async () => {
+    try {
+      const response = await fetch('http://localhost:5000/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await response.json();
+      if(response.ok){
+        alert(data.message);
+        navigate('/formpage');
+      } else {
+        alert(data.message);
+      }
+    } catch (err) {
+      console.error(err);
+      alert('Error connecting to server');
+    }
+  }
   return (
     <div className='container'>
       <div className='header'>
@@ -38,7 +70,7 @@ const Signup = () => {
       </div>
 
       <div className="submit-container">
-        <div className="submit">Sign Up</div>
+        <div className="submit" onClick={handleSubmit}>Sign Up</div>
       </div>
     </div>
   );
