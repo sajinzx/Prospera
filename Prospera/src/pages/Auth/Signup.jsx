@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Signup.css';
-import { Link } from "react-router-dom";
+
 
 import email_icon from '../../components/assets/emailimage.jpg';
 import pass_icon from '../../components/assets/password.jpg';

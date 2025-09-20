@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 
-
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,7 +13,6 @@ import Home from "./pages/dashboard/home"
 import Income from "./pages/dashboard/income"
 import Expense from "./pages/dashboard/expense"
 import FormPage from './pages/Auth/formpage';
-import Dashboard  from './components/Dashboard/dashboard';
 function App() {
   return (
     <div>
@@ -27,7 +25,6 @@ function App() {
           <Route path="/income" exact element={<Income/>}/>
           <Route path="/expense" exact element={<Expense/>}/>
           <Route path="/formpage" exact element={<FormPage/>}/>
-
 
 
         </Routes>
