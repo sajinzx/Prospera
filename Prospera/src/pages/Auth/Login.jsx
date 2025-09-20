@@ -1,5 +1,6 @@
 import React from 'react';
 import './Login.css';
+import { Link } from "react-router-dom";
 
 
 
@@ -32,12 +33,12 @@ const Login = () => {
         </div>
       </div>
 
-      <div className="forgot-password">
-        Forgot Password? <span>Click Here!</span>
-      </div>
+     
 
       <div className="submit-container">
         <div className="submit">Login</div>
+        <Link  className='submit' to="/Signup">Signup</Link>
+       
       </div>
     </div>
   );
