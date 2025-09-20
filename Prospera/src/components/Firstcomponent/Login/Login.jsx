@@ -1,5 +1,6 @@
 import React from 'react';
 import './Login.css';
+import { Link } from "react-router-dom";
 
 
 import email_icon from '../Assets/email.png';
@@ -31,6 +32,7 @@ const Login = () => {
 
       <div className="submit-container">
         <div className="submit">Login</div>
+        <Link to="/login">Login</Link>
       </div>
     </div>
   );

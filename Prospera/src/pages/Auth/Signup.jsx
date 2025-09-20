@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Signup.css';
+import { Link } from "react-router-dom";
 
 import email_icon from '../../components/assets/emailimage.jpg';
 import pass_icon from '../../components/assets/password.jpg';
@@ -72,6 +73,7 @@ const Signup = () => {
 
       <div className="submit-container">
         <div className="submit" onClick={handleSubmit}>Sign Up</div>
+         <Link className='submit' to="/Login">Login</Link>
       </div>
     </div>
   );
