@@ -18,10 +18,10 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Root/>}/>
+          <Route path="/" element={<SignUp/>}/>
           <Route path="/Login" exact element={<Login/>}/>
           <Route path="/Signup" exact element={<SignUp/>}/>
-          <Route path="/dashboard" exact element={<Home/>}/>
+          <Route path="/home" exact element={<Home/>}/>
           <Route path="/income" exact element={<Income/>}/>
           <Route path="/expense" exact element={<Expense/>}/>
           <Route path="/formpage" exact element={<FormPage/>}/>

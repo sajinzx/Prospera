@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Signup.css';
 
 import email_icon from '../../components/assets/emailimage.jpg';
@@ -22,7 +23,7 @@ const Signup = () => {
   }
   const handleSubmit = async () => {
     try {
-      const response = await fetch('http://localhost:5000/signup', {
+      const response = await fetch('http://localhost:3000/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

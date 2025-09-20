@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Login.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,7 +13,10 @@ import pass_icon from '../../components/assets/password.jpg';
 
 const Login = () => {
  
-
+  // const[values,setValues]=useState({
+  //   gmail:'',
+  //   password:''
+  // })
   return (
     <div className='container'>
       <div className='header'>
